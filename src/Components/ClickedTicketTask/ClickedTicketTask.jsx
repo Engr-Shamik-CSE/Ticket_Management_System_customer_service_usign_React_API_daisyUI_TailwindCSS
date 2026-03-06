@@ -1,9 +1,17 @@
 import React from 'react';
+import { toast } from 'react-toastify';
+import { AlarmClockCheck } from 'lucide-react';
 
-const ClickedTicketTask = ({clickedTicket , removeCompleteTask}) => {
-    
-    const handleRemoveComplete = () =>{
+const ClickedTicketTask = ({ clickedTicket, removeCompleteTask }) => {
+
+    const handleRemoveComplete = () => {
         removeCompleteTask(clickedTicket);
+        toast(
+            <div className='flex items-center gap-3'>
+                <AlarmClockCheck size={55} color="#1fd655" /> 
+                 <span className="text-black"><span className="font-bold">{clickedTicket.title}</span>" task is completed successfully!!</span>
+            </div>
+        );
     }
 
     return (

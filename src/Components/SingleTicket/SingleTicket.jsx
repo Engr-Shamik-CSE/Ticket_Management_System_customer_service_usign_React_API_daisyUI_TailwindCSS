@@ -11,7 +11,7 @@ const SingleTicket = ({ t, clickedTickets, setClickedTickets }) => {
             setIsClicked(true);
             toast(
                 <div>
-                    🚩 "<span className="font-bold">{t.title}</span>" is added to Task Status
+                    🚩 "<span className="font-bold text-black">{t.title}</span>" is added to Task Status
                 </div>
             );
         }

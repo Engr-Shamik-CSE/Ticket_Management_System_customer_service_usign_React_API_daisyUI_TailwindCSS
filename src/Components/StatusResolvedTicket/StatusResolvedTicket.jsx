@@ -4,7 +4,7 @@ import ResolvedTicketCard from '../ResolvedTicketCard/ResolvedTicketCard';
 
 const StatusResolvedTicket = ({ clickedTickets, removeCompleteTask, resolvedTickets }) => {
     return (
-        <div className='h-auto flex flex-col space-y-4'>
+        <div className='h-auto flex flex-col space-y-5'>
             <div className='bg-[rgba(99,46,227,0.10)] min-h-50 lg:min-h-80 p-5 lg:p-10 rounded-3xl shadow'>
                 <h2 className='text-xl font-semibold pb-4'>Task Status</h2>
                 <div className="taskBody">
