@@ -2,7 +2,7 @@
 import vector1 from '../assets/vector1.png'
 import vector2 from '../assets/vector2.png'
 
-const ProgressResolved = ({clickedTickets}) => {
+const ProgressResolved = ({clickedTickets,resolvedTickets}) => {
 
 
     return (
@@ -58,7 +58,7 @@ const ProgressResolved = ({clickedTickets}) => {
                     {/* Center Content */}
                     <div className="text-center absolute left-1/2 -translate-x-1/2">
                         <p className="text-base sm:text-lg md:text-xl font-medium">Resolved</p>
-                        <p className="text-2xl sm:text-3xl font-semibold">0</p>
+                        <p className="text-2xl sm:text-3xl font-semibold">{resolvedTickets.length}</p>
                     </div>
 
                     {/* Right Shape */}

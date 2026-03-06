@@ -11,6 +11,7 @@ function App() {
 
   const [clickedTickets, setClickedTickets] = useState([]);
   const [allTickets, setAllTickets] = useState([]); // NEW: State for all tickets
+  const [resolvedTickets, setResolvedTickets] = useState([]);  // NEW: state for resolved tickets
 
   useEffect(() => {  // NEW: Fetch inside App.jsx
     fetch('./ticketData.json')
@@ -25,6 +26,9 @@ function App() {
 
     // NEW: Also remove from allTickets (CustomerTickets view)
     setAllTickets(allTickets.filter((ticket) => ticket.id !== clickedTicket.id));
+
+    // NEW: Add to resolvedTickets
+    setResolvedTickets([...resolvedTickets, clickedTicket]);
   }
 
   return (
@@ -33,6 +37,7 @@ function App() {
       <div className='w-full bg-[#F5F5F5]'>
         <ProgressResolved
           clickedTickets={clickedTickets}
+          resolvedTickets={resolvedTickets}
         ></ProgressResolved>
 
         <div className='flex flex-col lg:flex-row ticketStatus w-11/12 md:w-10/12 mx-auto '>
@@ -48,6 +53,7 @@ function App() {
             <StatusResolvedTicket
               clickedTickets={clickedTickets}
               removeCompleteTask={removeCompleteTask}
+              resolvedTickets={resolvedTickets}
             ></StatusResolvedTicket>
           </div>
         </div>
