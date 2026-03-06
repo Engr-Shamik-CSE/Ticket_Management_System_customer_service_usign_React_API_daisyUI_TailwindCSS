@@ -1,8 +1,9 @@
 ## What is **JSX**, and why is it used?
-
+#### In English: ####
 - **JSX** stands for **JavaScript XML**. It allows you to write HTML-like code inside JavaScript. It's used because it makes the code more readable and easier to write compared to using complex JavaScript functions to create elements.
 
-- **JSX** এর পূর্ণরূপ হলো **JavaScript XML**। এটি জাভাস্ক্রিপ্টের ভিতরে এইচটিএমএল-এর মতো কোড লেখার সুযোগ দেয়। জটিল জাভাস্ক্রিপ্ট ফাংশন ব্যবহার করার চেয়ে JSX কোড বেশি পড়তে সুবিধাজনক এবং লেখা সহজ বলে এটি ব্যবহার করা হয়।
+#### In Bangla: ####
+- **JSX** এর পূর্ণরূপ হলো **JavaScript XML**। এটি জাভাস্ক্রিপ্টের ভিতরে এইচটিএমএল-এর মতো কোড লেখার সুযোগ দেয়। জটিল জাভাস্ক্রিপ্ট ফাংশন ব্যবহার করার চেয়ে **JSX** কোড বেশি পড়তে সুবিধাজনক এবং লেখা সহজ বলে এটি ব্যবহার করা হয়।
 ---
 
 ## What is the difference between **State** and **Props**?
