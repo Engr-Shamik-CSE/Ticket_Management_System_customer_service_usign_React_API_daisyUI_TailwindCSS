@@ -13,7 +13,7 @@ const ProgressResolved = ({clickedTickets,resolvedTickets}) => {
 
                 {/* In Progress Card */}
                 <div
-                    className="w-full lg:w-6/12 h-35 sm:h-40 md:h-45 lg:h-100 flex justify-between items-center rounded-xl px-4 overflow-hidden relative"
+                    className="w-full lg:w-6/12 h-35 sm:h-40 md:h-45 lg:h-80 flex justify-between items-center rounded-xl px-4 overflow-hidden relative"
                     style={{
                         background:
                             "linear-gradient(to right, rgba(99,46,227,0.90), rgba(144,85,238,0.90))",
@@ -29,7 +29,7 @@ const ProgressResolved = ({clickedTickets,resolvedTickets}) => {
                     {/* Center Content */}
                     <div className="text-center absolute left-1/2 -translate-x-1/2 ">
                         <p className="text-base sm:text-lg md:text-xl font-medium">In-Progress</p>
-                        <p className="text-2xl sm:text-3xl font-semibold">{clickedTickets.length}</p>
+                        <p className="text-2xl lg:text-5xl font-bold pt-2">{clickedTickets.length}</p>
                     </div>
 
                     {/* Right Shape */}
@@ -42,7 +42,7 @@ const ProgressResolved = ({clickedTickets,resolvedTickets}) => {
 
                 {/* Resolved Card */}
                 <div
-                    className="w-full lg:w-6/12 h-35 sm:h-40 md:h-45 lg:h-100 flex justify-between items-center rounded-xl px-4 overflow-hidden relative"
+                    className="w-full lg:w-6/12 h-35 sm:h-40 md:h-45 lg:h-80 flex justify-between items-center rounded-xl px-4 overflow-hidden relative"
                     style={{
                         background:
                             "linear-gradient(to right, rgba(84,207,103,0.85), rgba(0,130,122,0.85))",
@@ -58,7 +58,7 @@ const ProgressResolved = ({clickedTickets,resolvedTickets}) => {
                     {/* Center Content */}
                     <div className="text-center absolute left-1/2 -translate-x-1/2">
                         <p className="text-base sm:text-lg md:text-xl font-medium">Resolved</p>
-                        <p className="text-2xl sm:text-3xl font-semibold">{resolvedTickets.length}</p>
+                        <p className="text-2xl lg:text-5xl font-bold pt-2">{resolvedTickets.length}</p>
                     </div>
 
                     {/* Right Shape */}

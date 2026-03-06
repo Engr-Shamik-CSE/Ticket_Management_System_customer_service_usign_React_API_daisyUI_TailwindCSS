@@ -35,6 +35,8 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
                         >
                             <li><a>Home</a></li>
+                            <li><a>FAQ</a></li>
+                            <li><a>ChangeLOG</a></li>
                             <li><a>Blog</a></li>
                             <li><a>Download</a></li>
                             <li><a>Contact</a></li>
@@ -63,6 +65,8 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
 
                         <li><a>Home</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>ChangeLOG</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Download</a></li>
                         <li><a>Contact</a></li>

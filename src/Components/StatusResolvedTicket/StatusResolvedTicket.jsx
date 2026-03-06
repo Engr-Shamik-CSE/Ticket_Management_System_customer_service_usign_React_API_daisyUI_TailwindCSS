@@ -1,7 +1,8 @@
 import React from 'react';
 import ClickedTicketTask from '../ClickedTicketTask/ClickedTicketTask'
+import ResolvedTicketCard from '../ResolvedTicketCard/ResolvedTicketCard';
 
-const StatusResolvedTicket = ({ clickedTickets , removeCompleteTask }) => {
+const StatusResolvedTicket = ({ clickedTickets, removeCompleteTask, resolvedTickets }) => {
     return (
         <div className='h-auto flex flex-col space-y-4'>
             <div className='bg-[rgba(99,46,227,0.10)] min-h-50 lg:min-h-80 p-5 lg:p-10 rounded-3xl shadow'>
@@ -22,8 +23,16 @@ const StatusResolvedTicket = ({ clickedTickets , removeCompleteTask }) => {
             <div className='bg-[rgba(0,130,122,0.10)] p-5 lg:p-10 rounded-3xl min-h-50 lg:min-h-80 shadow'>
                 <h2 className='text-xl font-semibold pb-4'>Resolved Task</h2>
                 <div className='resolvedTaskBody'>
-                    <p>No resolved tasks yet.</p>
-                    <p className='NewReslovedCard'>Completed card title dynamicly with a beautiful design is resolved  </p>
+                    {resolvedTickets.length === 0 ? (
+                        <p>No resolved tasks yet.</p>
+                    ) : (
+                        resolvedTickets.map(resolvedTicket => (
+                            <ResolvedTicketCard
+                                key={resolvedTicket.id}
+                                ticket={resolvedTicket}
+                            ></ResolvedTicketCard>
+                        ))
+                    )}
                 </div>
             </div>
         </div>
